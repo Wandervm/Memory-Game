@@ -68,6 +68,7 @@
     border-radius: 9px;
     left: 29%;
     bottom:60px ;
+    
 }
 #close{
     font-family: 'Hina Mincho';
@@ -101,16 +102,17 @@
 border-radius: 50%;
 width: 150px;
 height: 150px;
+
 }
 
-.cardBack img{
+.cardBack {
     position: relative;
     right: 10px;
     width: 150px;
     bottom: 130px;
 }
-.cardFront img{
-    
+.cardFront {
+    position: relative;
     width: 50%;
     border-radius: 30px;
     
