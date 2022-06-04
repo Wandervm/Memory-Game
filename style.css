@@ -70,21 +70,29 @@
     bottom:60px ;
 }
 #close{
+    font-family: 'Hina Mincho';
+    border-style: none;
+    border-radius: 50%;
     position: relative;
     left: 45%;
-    top: 90px;
+    top: 80px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
+    box-shadow: 0px 3px 15px rgb(3, 3, 3);
+    color: rgb(0, 0, 0);
+    background: linear-gradient(315deg, rgb(218, 91, 40) 20%, rgb(170, 46, 46) 74%);
 }
 .table {
-    position: relative;
+    position: absolute;
     left: 120px;
-    top: 100px;
-    width: 100%;
+    top: 160px;
+    width: 100%; 
 }
 
 .cards{
-    display: inline-block;
+   
    
     padding: 10px;
     
@@ -96,14 +104,28 @@ height: 150px;
 
 .cardBack img{
     position: relative;
+    right: 10px;
     width: 150px;
     bottom: 130px;
 }
 .cardFront img{
-    position: relative;
+    
     width: 50%;
     border-radius: 30px;
-    background: linear-gradient(315deg, rgb(218, 91, 40) 20%, rgb(170, 46, 46) 74%);
-    left: 25px;
+    
 
+}
+.table1{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    left: 20%;
+    top: 13%;
+}
+.table2{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    left: 32%;
+    bottom: 70%;
 }
