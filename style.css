@@ -76,27 +76,28 @@
     position: relative;
     left: 45%;
     top: 80px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 25px;
     box-shadow: 0px 3px 15px rgb(3, 3, 3);
     color: rgb(0, 0, 0);
     background: linear-gradient(315deg, rgb(218, 91, 40) 20%, rgb(170, 46, 46) 74%);
 }
 .table {
     position: absolute;
-    left: 120px;
-    top: 160px;
-    width: 100%; 
+    width: 700px;
+    left: 5%;
+    top: 15%;
+    
+   
+    
+    
 }
 
 .cards{
-   
-   
-    padding: 10px;
-    
-margin: 1px;
+    display: inline-block;
+   padding: 10px;
 border-radius: 50%;
 width: 150px;
 height: 150px;
@@ -113,19 +114,4 @@ height: 150px;
     width: 50%;
     border-radius: 30px;
     
-
-}
-.table1{
-    margin: 0%;
-    padding: 0%;
-    position: relative;
-    left: 20%;
-    top: 13%;
-}
-.table2{
-    margin: 0%;
-    padding: 0%;
-    position: relative;
-    left: 32%;
-    bottom: 70%;
 }
