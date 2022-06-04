@@ -82,12 +82,28 @@
     top: 100px;
     width: 100%;
 }
+
 .cards{
     display: inline-block;
+   
     padding: 10px;
-background-color: #ccc5c5;
-margin: 10px;
+    
+margin: 1px;
 border-radius: 50%;
 width: 150px;
 height: 150px;
+}
+
+.cardBack img{
+    position: relative;
+    width: 150px;
+    bottom: 130px;
+}
+.cardFront img{
+    position: relative;
+    width: 50%;
+    border-radius: 30px;
+    background: linear-gradient(315deg, rgb(218, 91, 40) 20%, rgb(170, 46, 46) 74%);
+    left: 25px;
+
 }
