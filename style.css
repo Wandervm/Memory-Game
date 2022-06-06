@@ -86,10 +86,12 @@
     background: linear-gradient(315deg, rgb(218, 91, 40) 20%, rgb(170, 46, 46) 74%);
 }
 .table {
-    position: absolute;
+    position: relative;
     width: 700px;
     left: 5%;
     top: 15%;
+    perspective: 1000px;
+    
     
    
     
@@ -97,23 +99,48 @@
 }
 
 .cards{
+    position: relative;
+    cursor: pointer;
     display: inline-block;
    padding: 10px;
 border-radius: 50%;
 width: 150px;
 height: 150px;
+transform: scale(1);
+transform-style: preserve-3d;
+transition: .9s;
+transform: .9s;
 
+
+
+}
+.cards:active{
+    transform: scale(0.95);
+    transition: .3s;
+    transform: .3s;
+    
+    
 }
 
 .cardBack {
-    position: relative;
-    right: 10px;
+    position: absolute;
+    right: 30px;
     width: 150px;
-    bottom: 130px;
+    bottom: 15px;
+    backface-visibility: hidden;
+    
 }
+
+
 .cardFront {
-    position: relative;
+    position: absolute;
     width: 50%;
     border-radius: 30px;
-    
+    transform: rotateY(180deg);
+
+}
+
+
+.cards.flip {
+    transform: rotateY(180deg);
 }
