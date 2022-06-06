@@ -89,7 +89,7 @@
     position: relative;
     width: 700px;
     left: 5%;
-    top: 15%;
+    top: 25%;
     perspective: 1000px;
     
     
@@ -126,7 +126,7 @@ transform: .9s;
     position: absolute;
     right: 30px;
     width: 150px;
-    bottom: 15px;
+    bottom: 29px;
     backface-visibility: hidden;
     
 }
