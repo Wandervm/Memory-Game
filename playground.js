@@ -26,6 +26,7 @@ function modeChange(){
     changeClass();
     darkButton();
     changetext();
+    ligthScreen();
    
 }
 
@@ -37,6 +38,14 @@ function changeClass(){
 function darkButton(){
   
     buttonLight.classList.toggle( 'darkButton');
+    if(body.classList.contains('lightMode')){
+        buttonLight.style.backgroundColor = "black";
+        return;
+    }
+    if(body.classList.contains('darkMode')){
+        buttonLight.style.backgroundColor = "#f1f1f1";
+        return;
+    }
 }
 
 function changetext(){
@@ -48,5 +57,18 @@ function changetext(){
         buttonLight.innerHTML = "Light Mode";
         return;
         
+    }
+}
+
+function ligthScreen(){
+    if(body.classList.contains('lightMode')){
+        playScreen.classList.remove('darkScreen');
+        playScreen.classList.add('ligthScreen');
+        return;
+    }
+    if(body.classList.contains('darkMode')){
+        playScreen.classList.add('darkScreen');
+        playScreen.classList.remove('ligthScreen');
+        return;
     }
 }
